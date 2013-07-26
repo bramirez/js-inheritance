@@ -19,7 +19,7 @@
 
 
 ### Review creating and Object ###
-1. syntax constructs
+* syntax constructs
 
 ```js
   var o = { a: 1 }; //inherits from Object.prototype, which inherits from null
@@ -28,7 +28,7 @@
 ```
 
 
-2. constructor (``new operator``)
+* constructor (``new operator``)
 
 ```js
 function Person(name){
@@ -42,7 +42,7 @@ Person.prototype.sayName = function(){
 var john = new Person('john'); //inherits from Person
 ```
 
-3. ``Object.create(prototype)`` (introduced by ECMAScript 5)
+* ``Object.create(prototype)`` (introduced by ECMAScript 5)
   * creates a new object
 
 ```js
