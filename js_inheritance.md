@@ -27,6 +27,7 @@
   function f(){ return 'this is a function'; } //inherits from Function.prototype, which inherits from Object.prototype?
 ```
 
+
 2. constructor (``new operator``)
 
 ```js
