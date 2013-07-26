@@ -1,8 +1,11 @@
 http://jsfiddle.net/U2xTs/3/
+
 http://jsfiddle.net/U2xTs/4/ << with super call
 
 http://jsfiddle.net/rE3xQ/ << John Resig Approach
+
 http://jsfiddle.net/ykDdu/ << Crockford Approach
+
 http://jsfiddle.net/jjLQP/ << Gavin Kistner Approach
 
 
