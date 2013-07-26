@@ -1,7 +1,7 @@
 # JAVASCRIPT INHERITANCE #
 
 
-## MDN: Inheritance and the prototype chain ##
+## [MDN: Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain) ##
 * dynamic
 * does not provide a class implementation
   * but class is a reserved keyword
@@ -18,13 +18,14 @@
 * ``null`` - final link in the prototype chain
 
 
-### Review creating and Object ###
+#### Review creating an Object ####
+
 * syntax constructs
 
 ```js
-  var o = { a: 1 }; //inherits from Object.prototype, which inherits from null
-  var a = [1, 'b']; //inherits from Array.prototype, which inherits from Object.prototype
-  function f(){ return 'this is a function'; } //inherits from Function.prototype, which inherits from Object.prototype?
+    var o = { a: 1 }; //inherits from Object.prototype, which inherits from null
+    var a = [1, 'b']; //inherits from Array.prototype, which inherits from Object.prototype
+    function f(){ return 'this is a function'; } //inherits from Function.prototype, which inherits from Object.prototype?
 ```
 
 
@@ -42,6 +43,7 @@ Person.prototype.sayName = function(){
 var john = new Person('john'); //inherits from Person
 ```
 
+
 * ``Object.create(prototype)`` (introduced by ECMAScript 5)
   * creates a new object
 
@@ -57,29 +59,32 @@ var john = new Person('john'); //inherits from Person
   var subchild = Object.create(child); //inherits from child
 ```
 
-### Inheriting "methods" ###
+
+#### Inheriting "methods" ####
 * any function can be added to an object in the form of property
 * inherited function acts just as any other properties
 
 ---
 
 
+## Different Inheritance Approach ##
+
+#### John Resig ####
+    
+* [Simple Javascript Inheritance](http://ejohn.org/blog/simple-javascript-inheritance)
+  * http://jsfiddle.net/rE3xQ/2/
 
 
+#### Douglas Crockford ####
+* [Classical Inheritance in Javascript](http://www.crockford.com/javascript/inheritance.html)
+  * http://jsfiddle.net/ykDdu/1/
 
 
-http://jsfiddle.net/U2xTs/3/
-
-http://jsfiddle.net/U2xTs/4/ << with super call
-
-http://jsfiddle.net/rE3xQ/ << John Resig Approach
-
-http://jsfiddle.net/ykDdu/ << Crockford Approach
-
-http://jsfiddle.net/jjLQP/ << Gavin Kistner Approach
+#### Gavin Kistner ####
+* [Convenient Inheritance](http://phrogz.net/js/classes/OOPinJS2.html)
+  * http://jsfiddle.net/jjLQP/1/
 
 
-http://www.crockford.com/javascript/inheritance.html
-http://ejohn.org/blog/simple-javascript-inheritance
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain
-http://phrogz.net/js/classes/OOPinJS2.html
+Sample Inheritance
+
+http://jsfiddle.net/U2xTs
