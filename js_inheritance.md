@@ -87,4 +87,4 @@ var john = new Person('john'); //inherits from Person
 
 Sample Inheritance
 
-http://jsfiddle.net/U2xTs
+http://jsfiddle.net/U2xTs/6/
