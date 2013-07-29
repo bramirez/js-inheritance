@@ -44,7 +44,7 @@ var john = new Person('john'); //inherits from Person
 ```
 
 
-* ``Object.create(prototype)`` (introduced by ECMAScript 5)
+* ``Object.create(prototype)`` (introduced by [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript))
   * creates a new object
 
 ```js
