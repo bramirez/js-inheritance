@@ -83,8 +83,3 @@ var john = new Person('john'); //inherits from Person
 #### Gavin Kistner ####
 * [Convenient Inheritance](http://phrogz.net/js/classes/OOPinJS2.html)
   * http://jsfiddle.net/jjLQP/1/
-
-
-Sample Inheritance
-
-http://jsfiddle.net/U2xTs/6/
