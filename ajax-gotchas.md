@@ -27,7 +27,7 @@
 * Cross-site scripting
 * Cross-site request forgery
 
-#### ajax objects ####
+#### Ajax Objects ####
 * Too much is not always best. It may become less interactive and more unresponsive
 * Instantiate new objects per request. Some browsers do not allow the reuse of ajax objects
 
