@@ -1,38 +1,36 @@
 # AJAX GOTCHAS #
 
-### visual cues ###
-* starting 
-* ending
-* processing/loading
-* error 
-* correct response
+### Visual Cues ###
+* Starting a request
+* Use a loading cue to signify that the request is being processed
+* Display error messages
 
-#### deep links ####
-* bookmarks/links/urls
-* back button
-* site crawling
+#### Deep Linking ####
+* Direct Links might not work if the site is too dependent on ajax requests
+* No history
+* Site crawlers may not work as intended
 
-#### backwards compatibility ####
-* might not work with older browsers
-* browser which have js disabled
+#### Backwards Compatibility ####
+* Might not work with older browsers
+* Consider users that may have javascript disabled
 
-#### third party access ####
-* by default ajax requests are only allowed within the same domain
-* create action which returns json/xml to the ajax request
+#### Third Party Data ####
+* By default ajax requests are only allowed within the same domain
+* Create server actions which return json/xml response to the ajax request
 
-#### user data ####
-* never use ajax to handle sensitive data submission
-* better if limited to get requests
-* batch operations
+#### Data Handling ####
+* As much as possible, never use ajax to handle form submission with a lot of data.
+* Better if ajax requests are limited to GET requests
+* Prefer batch operations over a lot of repetetive small actions
 
-#### security issues ####
-* cross-site scripting
-* cross-site request forgery
+#### Security Issues ####
+* Cross-site scripting
+* Cross-site request forgery
 
 #### ajax objects ####
-* too much makes the browser slow
-* remove ajax objects that are with completed requests
-* instantiate new objects per request. some browsers do not allow the reuse of ajax objects
+* Too much is not always best. It may become less interactive and more unresponsive
+* Instantiate new objects per request. Some browsers do not allow the reuse of ajax objects
+
 
 
 ##### References:
