@@ -6,6 +6,20 @@
 * does not provide a class implementation
   * but class is a reserved keyword
 
+#### Java - JavaScript ####
+
+Strongly-typed	- Loosely-typed
+
+Static -	Dynamic
+
+Classical -	Prototypal
+
+Classes -	Functions
+
+Constructors -	Functions
+
+Methods -	Functions
+
 
 #### Objects ####
 * Javascript's construct
@@ -16,6 +30,7 @@
 * object's internal link to another object
 * has a prototype of its own
 * ``null`` - final link in the prototype chain
+* acts like a parent of an object
 
 
 #### Review creating an Object ####
@@ -63,6 +78,23 @@ var john = new Person('john'); //inherits from Person
 #### Inheriting "methods" ####
 * any function can be added to an object in the form of property
 * inherited function acts just as any other properties
+
+```js
+  function Animal(name) {
+    this.name = name;
+    this.numLegs = 4;
+  }
+
+  function Rabbit(name) {
+      this.name = name;
+  }
+  
+  Rabbit.prototype = new Animal();
+  
+  var ming = new Rabbit("mingming");
+  console.log(ming.numLegs);
+```
+
 
 ---
 
