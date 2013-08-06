@@ -3,14 +3,14 @@
 ### visual cues ###
 * starting 
 * ending
+* processing/loading
 * error 
 * correct response
 
 #### deep links ####
-* bookmarks
-* urls
+* bookmarks/links/urls
 * back button
-* seo crawling
+* site crawling
 
 #### backwards compatibility ####
 * might not work with older browsers
